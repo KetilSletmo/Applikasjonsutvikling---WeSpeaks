@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>WeSpeaks</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial scale 1.0">
+<link rel="stylesheet" type="text/css" href="General.css">
+
+<body>
+	<form id="registrerForm">
+		<fieldset id="registrerField">
+			<legend>Registrer bruker</legend>
+			<label>Epost-adresse: </label>
+			<input type="email" class="tekst"><br>
+			<label>Brukernavn: </label>
+			<input type="text" class="tekst"><br>
+			<label>Passord: </label>
+			<input type="password" class="tekst"><br>
+			<label>Gjenta passord: </label>
+			<input type="password" class="tekst"><br>
+			<?php
+				if (!$oppgave) {
+					echo("<img src='image.php' />\n");
+					echo("<p>Vennligst gjenta teksten her:</p>\n");
+					echo("<form method='POST' action='default.php'>\n");
+					echo("<input type='text' name='inntekst' id='inntekst' size='40'>\n");
+					echo("<input type='submit' name='sendt' value='Registrer bruker' id='regKnapp' class='knapp regknapp'>\n");
+				} else {
+					echo("Takk. Input riktig gjengitt");
+				}
+			?>
+		</fieldset>
+		
+		<fieldset class="Foresporsel">
+			<article class="regForesporsel">
+			<p id="tekstReg">Har du en bruker?</p>
+			<input type="button" value="Tilbake til logg inn" class="knapp" onclick="default.php">
+			</article>
+		</fieldset>
+	</form>	
+</body>
+
+</html>

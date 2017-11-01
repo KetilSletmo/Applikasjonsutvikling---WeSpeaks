@@ -1,0 +1,71 @@
+/*Ferdig stilt av Jan 27.09.2017 */
+/*Kontrollert av Ketil 27.09.2017 */
+article		{
+			margin-top: 2%;
+			margin-left: 5%;
+			}
+h1			{
+			display: inline-block;
+			}
+
+table.excl	{
+			background-color: #5C5A5A;
+			border-collapse: collapse;
+			width: 90%;
+			height: 90%;
+			margin-left: 5%;
+			margin-top: 2%;
+			}
+			
+
+div.nydiv	{
+			display: none;
+			}
+			
+table, td, th {
+			border: 2px solid black;
+			margin-bottom: 20px;
+			}
+
+
+
+@media (min-width: 450px) and (max-width: 850px)	{
+
+table.excl	{
+			background-color: #5C5A5A;
+			border-collapse: collapse;
+			width: 90%;
+			height: 90%;
+			margin-top: 2%;
+			margin-left: 5%;
+			}
+tr.hidden	{
+			display:none;
+			}
+div.nydiv	{
+			display: none;
+			}		
+table, td, th {
+    border: 2px solid black;
+	margin-bottom: 20px;
+			}
+}
+
+@media (max-width: 450px)	{
+
+table.excl	{
+		display: none;
+			}
+div.rep		{
+		height: 90%;
+			}
+div.nydiv	{
+		background-color: #5C5A5A;
+		height: 70%;
+		width: 100%;
+		border: 1px solid black;
+		text-align: center;
+		display: table;
+		margin-top: 10px;
+			}
+}

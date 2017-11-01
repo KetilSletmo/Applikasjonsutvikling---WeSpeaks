@@ -1,0 +1,200 @@
+/*Ferdig stilt av Ole 27.09.2017 */
+/*Kontrollert av Ketil 27.09.2017 */
+/*Global styling*/
+html, body 	{
+			height: 90%;
+			}
+*			{
+			margin: 0px; 
+			padding: 0px;
+			}
+body		{
+			background-color: #191919;
+			color: white;
+			font-family: comfortaa;
+			font-size: 20px;
+			}
+nav.topbar	{
+			height: 100px;
+			background-color: #191919;
+			
+			}
+.Login		{
+			background-color: silver;
+			width: 250px;
+			position:relative;
+			float: right;
+			padding-left: 20px;
+			padding-top: 38px;
+			padding-bottom: 38px;
+			}
+.Login p	{
+			font-size: 20px;
+			}
+nav.meny	{
+			background-color: orange;
+			text-align: center;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			width: 100%;
+			top: 0;
+			position: sticky;
+			position: -webkit-sticky;
+			}
+nav.meny a:link	{
+				text-decoration: none;
+				color: white;
+				}
+nav.meny a:visited	{
+					color: white;
+					}
+input[type=checkbox]{
+					display: none;
+					-webkit-appearance: none;
+					}
+section.TheSection	{
+					height: 82%;
+					}
+#hamburgeren		{
+					font-size: 50px;
+}
+footer		{
+			height: 100px;
+			background-color: grey;
+			color: black;
+			font-size: 18;
+			text-align: center;
+			}
+
+@media screen and (min-width: 850px){
+nav.meny ul li a:hover	{
+						background-color: #ff8003;
+						color: white;
+						}
+#valgt		{
+			background-color: #ff8003;
+			color: white;
+}
+nav.meny ul li	{
+				display: inline;
+				list-style: block;
+				
+				}
+nav.meny ul li a	{
+					padding-left: 60px;
+					padding-right: 60px;
+					padding-bottom: 20px;
+					padding-top: 20px;
+					border-radius: 4px;
+					}
+
+nav.meny .responsivMeny	{
+						display: none;
+						}
+
+#toggle{
+	display:none;
+	}
+}
+
+/*Tabelstørrelse styling*/
+@media screen and (min-width: 450px) and (max-width: 850px) {
+	.bildet		{
+				width: 200px;
+				height: 50px;
+				}
+	.Login		{
+				width: 40%;
+				padding-right: 0px;
+				padding-left: 5px;
+				padding-top: 15px;
+				padding-bottom: 14px;
+				}
+	.Login p	{
+				font-size: 18px;
+				}
+	nav.topbar	{
+				height: 50px;
+				}
+	nav.meny{
+			padding: 0px;
+			width: 40%;
+			position: absolute;
+			}	
+	nav.meny ul	{
+				display: none;
+				}
+	nav.meny .responsivMeny{
+							display:none;
+							}
+	nav.meny .responsivMeny:hover{
+								background-color: orange;
+								}
+	nav.meny ul.pc li 	{
+						padding-top: 15px;
+						padding-bottom: 15px;
+						margin-bottom: 2px;
+						height: 20px;
+						width: 100%;
+						}
+	label{
+		display: block;
+		cursor: pointer;
+		left: 5;
+		}
+	input[type=checkbox]:checked ~ .pc	{
+										display: block;
+										}
+}
+
+/*Mobil styling*/
+@media screen and (max-width: 450px){
+	.bildet		{
+				width: 100px;
+				height: 25px;
+				}
+	.Login		{
+				width: 130px;
+				height: 25px;
+				padding-left: 5px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				}
+	.Login p	{
+				font-size: 14px;
+				}
+	nav.topbar	{
+				height: 25px;
+				}
+	nav.meny	{
+				padding: 0px;
+				position: absolute;
+				width: 40%;
+				}
+	nav.meny ul	{
+				display: none;
+				}
+	nav.meny .responsivMeny	{
+							display: block;
+							height: 40px;
+							padding-top: 13px;
+							background-color: orange;
+							width:100%;
+							}
+	nav.meny .responsivMeny:hover	{
+									background-color: orange;
+									}
+	nav.meny ul.pc li, li a	{
+							padding-top: 10px;
+							padding-bottom: 10px;
+							margin-bottom: 2px;
+							width: 150px;
+				
+							}
+	input[type=checkbox]:checked ~ .pc	{
+										display: block;
+										}
+	footer	{
+			font-size: 14px;
+			}
+}

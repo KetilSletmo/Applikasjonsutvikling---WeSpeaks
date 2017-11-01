@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--Laget av Ketil 26.09.2017 -->
+<!--Endret av Ole 27.09.2017 -->
+<!--Kontrollert av Hamta 27.09.2017 -->
+<html>
+
+<head>
+<title>WeSpeaks</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="General.css">
+<link rel="stylesheet" type="text/css" href="GruppeStyle.css">
+</head>
+
+<body>
+	<!--Kommentar ole: Tenker å legge inn slik at menybaren blir fixed etter at menybaren treffer toppen av webbrowseren-->
+	<nav class="topbar">
+		<img src="logo.png" class="bildet" alt="Bilde av logo">
+		<div class="Login">
+			<p>Login og registrering</p>
+		</div>
+	</nav> 
+	<nav class="meny">
+		<!--"Hamburgerknapp løsning for mobile enheter ved bruk av checkbox typen -->
+		<label for="responsivMeny" class="responsivMeny">Vis meny</label>
+		<input type="checkbox" id="responsivMeny" role="button">
+		<!--lag en liste over menyvalgene-->
+		<ul class="pc">
+			<li><a href="default.php">Hjem</a></li>
+			<li><a href="arrangement.html">Arrangement</a></li>
+			<li><a id="valgt" href="Grupper.html">Grupper</a></li>
+			<li><a href="omOss.html">Om oss</a></li>
+		</ul>
+	</nav>
+	<h1 class="overskrift">Finn grupper</h1>
+	<p class="tekst">Søk etter grupper etter kategori/interesser under:</p>
+	<section id="TheSection">
+		<article id="tekstOgBokser">
+				<div class="forklaring"> 
+					<p class="tekst">Dette er en boks der du kan velge alternativer for å velge en gruppe.</p>
+				</div>
+				<p class="tekst"><strong>Gruppetype:</strong></p>
+				<div class="forklaring"> 
+					<p class="tekst">Dette er en boks der du kan velge gruppetype for gruppesøket.</p>
+				</div>
+				<h2 class="eks">Finn en eksisterende gruppe:</h2>
+			<div class="forklaring"> 
+				<p class="tekst">Dette er en boks der du kan søke etter en gruppe.</p>
+			</div>
+		</article>
+		<article id="tabell">
+			<table> 
+				<tr>	
+					<td>Grupper som er valgt ut for deg:</td>
+					<td>Antall medlemmer:</td>
+					
+				</tr>
+				<tr>
+					<td>Gruppe 1</td>
+					<td>205.500</td>
+					<td>Send en forespørsel</td>
+				</tr>
+				<tr>
+					<td>Gruppe 2</td>
+					<td>10.001</td>
+					<td>Send en forespørsel</td>
+				</tr>
+				<tr>
+					<td>Gruppe 3</td>
+					<td>896.799</td>
+					<td>Send en forespørsel</td>
+				</tr>
+			</table>
+		</article>
+	</section>
+</body>
+
+<footer>
+	<p>Lenker og terms of service</p>
+<!--Forskjellige lenker og terms of service-->
+</footer>
+
+</html>

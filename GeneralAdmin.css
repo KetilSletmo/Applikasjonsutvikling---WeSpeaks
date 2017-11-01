@@ -1,0 +1,21 @@
+/*Ferdig stilt av Ole 27.09.2017 */
+/*Kontrollert av Jan 27.09.2017 */
+/*Global styling*/
+div.Login	{
+			background-color: orange;
+			}
+nav.meny	{
+			background-color: gray;
+			}
+section.TheSection	{
+					height: 82%;
+					}
+footer		{
+			background-color: #CACACA;
+			}
+@media screen and (min-width: 850px){
+nav.meny ul li a	{
+					padding-left: 40px;
+					padding-right: 40px;
+					}
+}

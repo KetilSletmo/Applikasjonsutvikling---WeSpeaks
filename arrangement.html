@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--Laget av Jan 26.09.2017 -->
+<!--Endret av Ole 27.09.2017 -->
+<!--Kontrollert av Ketil 27.09.2017 -->
+<html>
+
+<head>
+<title>WeSpeaks</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial scale 1.0">
+<link rel="stylesheet" type="text/css" href="General.css">
+<link rel="stylesheet" type="text/css" href="arrangementStyle.css">
+</head>
+
+<body>
+	<!--Kommentar ole: Tenker å legge inn slik at menybaren blir fixed etter at menybaren treffer toppen av webbrowseren-->
+	<nav class="topbar">
+		<img src="logo.png" class="bildet" alt="Bilde av logo">
+		<div class="Login">
+			<p>Login og registrering</p>
+		</div>
+	</nav> 
+	<nav class="meny">
+		<!--"Hamburgerknapp løsning for mobile enheter ved bruk av checkbox typen -->
+		<label for="responsivMeny" class="responsivMeny">Vis meny</label>
+		<input type="checkbox" id="responsivMeny" role="button">
+		<!--lag en liste over menyvalgene-->
+		<ul class="pc">
+			<li><a href="default.php">Hjem</a></li>
+			<li><a id="valgt" href="arrangement.html">Arrangement</a></li>
+			<li><a href="Grupper.html">Grupper</a></li>
+			<li><a href="omOss.html">Om oss</a></li>
+		</ul>
+	</nav>
+	
+	<article>
+		<h1>Arrangement</h1>
+	</article>
+	
+	<table class="excl">
+		<tr>
+			<td>
+			Arrangement
+			</td>
+			<td>
+			Informasjon
+			</td>
+		</tr>
+		<tr>
+			<td>
+			Arrangement
+			</td>
+			<td>
+			Informasjon
+			</td>
+		</tr>
+		<tr class="hidden">
+			<td>
+			Arrangement
+			</td>
+			<td>
+			Informasjon
+			</td>
+		</tr>
+		<tr class="hidden">
+			<td>
+			Arrangement
+			</td>
+			<td>
+			Informasjon
+			</td>
+		</tr>
+	</table>
+	
+	<div class="rep">
+		<div class="nydiv">Arrangement</div>
+	</div>
+	
+
+</body>
+
+<footer>
+	<p>Lenker og terms of service</p>
+<!--Forskjellige lenker og terms of service-->
+</footer>
+
+</html>

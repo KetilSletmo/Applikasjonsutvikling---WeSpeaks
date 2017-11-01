@@ -1,0 +1,106 @@
+/*Ferdig stilt av Ketil 27.09.2017 */
+/*Kontrollert av Hamta 27.09.2017 */
+td			{
+			background-color:#5C5A5A;
+			padding: 25px;
+			height: 15px;
+			width: 50px;
+			margin-left:1px;
+			margin-right:1px;
+			margin-top: 1px;
+			}
+h1 			{
+			margin-top:20px;
+			margin-left:20px;
+			}
+h2			{
+			margin-left: 20px;
+			}
+.tekst		{
+			margin-left:20px;
+			margin-top: 20px;
+			}	
+table		{
+			margin-top: 20px;
+			width: 100%;
+			height: 500px;
+			}
+table, td	{
+			border:1px solid orange;
+			margin: center;
+			border-collapse: collapse;
+			text-align: center;
+			}	
+td			{
+			background-color: #5C5A5A;
+			width: 10px;
+			}
+.forklaring		{
+				background-color: grey;
+				margin-left: 15px;
+				margin-bottom: 40px;
+				width: 100%;
+				height: 200px;		
+				}
+
+
+
+
+@media (min-width: 850px){
+#TheSection	{
+			margin-top: 20px;
+			column-count: 2;
+			}
+#tabell		{
+			break-before: column;
+			}
+}
+
+
+
+
+
+
+@media (max-width: 450px){
+.forklaring		{
+				background-color: grey;
+				display: table;
+				width: 100%;
+				height: 10%;
+				}
+.tekst			{
+				margin-left:5px;
+				margin-top:25px;
+				margin-bottom:10px;
+				}		
+.tekst			{
+				font-size: 1;
+				}
+table			    {
+					display: none;
+}
+}
+
+
+
+
+
+@media screen and (min-width: 450px) and (max-width: 850px) {
+.forklaring		{
+					background-color: grey;
+					width: 100%;
+					height: 150px;
+					margin-left: 15px;
+					margin-bottom: 10px;
+}
+.tekst				{
+					margin-left:15px;
+					margin-top:25px;
+					margin-bottom:10px;
+					}
+td					{
+					background-color:#5C5A5A;
+					padding: 25px;
+					height: 15px;
+					}
+}
